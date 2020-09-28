@@ -59,20 +59,17 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
-~~~~~~~~~~~~~~~~~~~~ NVM setup ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+################### NVM setup #############################
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-# sudo apt-get install nodejs-dev node-gyp - This is unlikely to be required
-# sudo apt-get install npm mocha - This is unlikely to be useful yet
 sudo apt update
 
-~~~~~~~~~~~~~~~~~~~~ RVM setup ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+################### RVM setup #############################
 # Do this last because it seems to overwrite some of the other settings
 
 sudo apt-add-repository -y ppa:rael-gc/rvm
-source /etc/profile.d/rvm.sh
 sudo apt-get install rvm
+source /etc/profile.d/rvm.sh
 rvm autolibs disable
-rvm install 2.3
 rvm install 2.4
 rvm install 2.5
 rvm install 2.6
