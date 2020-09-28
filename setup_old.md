@@ -3,46 +3,42 @@
 #################### Manual setup #########################
 # Google Chrome
 # Slack
-# Language Packs / Translation Packs
+# Any Language Packs / Translation Packs required
 # Add Coding directory to path (~/Code)
 # Download chromedriver and geckodriver AND place them on PATH
 
 #################### Vim setup ############################
+sudo apt install vim -y
 echo "set backspace=2" >> ~/.vimrc
 echo "set nocompatible" >> ~/.vimrc
 
-#################### Git setup ###########################
+#################### Git setup ############################
 sudo apt install git -y
 git config --global user.email "lukehill_uk@hotmail.com"
 git config --global user.name "Luke Hill"
 
-#################### GFX setup ############################
-ubuntu-drivers devices
-# sudo ubuntu-drivers autoinstall - This I think causes issues
-# Ignore the italicised writing below, thats VI being stupid!!
-echo "This will look like it's wiping files. But don't worry it won't screw with C+P"
-sudo apt-get purge '*nvidia*'
-sudo add-apt-repository ppa:graphics-drivers -y
-sudo apt-get update
-
-~~~~~~~~~~~~~~~~~~~~ Generic setup ~~~~~~~~~~~~~~~~~~~~~~~~
+#################### Generic setup ########################
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install --no-install-recommends gnome-panel -y
 sudo apt-get install gnome-tweak-tool libappindicator1 -y
-sudo apt-get install software-properties-common -y
-sudo apt-get install curl -y
+sudo apt-get install software-properties-common curl -y
 sudo apt-get install libcurl3-gnutls libcurl4-openssl-dev -y
 sudo apt-get install libcurl4 -y
-sudo apt install vim -y
 sudo apt-get update
-sudo apt install mysql-workbench
+sudo apt install mysql-workbench --fix-missing -y
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc
-sudo apt-get install awscli libreoffice pip
-sudo apt-get install openjdk-8-jdk libssl1.0-dev
-sudo apt update
-sudo npm install speccy -g
-~~~~~~~~~~~~~~~~~~~~ Bash aliases setup ~~~~~~~~~~~~~~~~~~~
+sudo apt-get install awscli libreoffice --fix-missing -y
+sudo apt-get install python3-pip -y
+sudo apt-get install openjdk-8-jdk libssl1.0-dev --fix-missing -y
+sudo apt update --fix-missing
+
+#################### Google Chrome setup ##################
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb -y
+rm ./google-chrome-stable_current_amd64.deb
+
+#################### Bash aliases setup ###################
 echo "# Bash alias created as advised by ~/.bashrc" >> ~/.bash_aliases
 echo "# Make a human readable path accessible at 'path' - Created on $(date)" >> ~/.bash_aliases
 echo "alias path='echo \$PATH | tr \":\" \"\n\"'" >> ~/.bash_aliases
