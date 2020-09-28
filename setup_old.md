@@ -20,9 +20,10 @@ git config --global user.name "Luke Hill"
 #################### Generic setup ########################
 sudo apt-get update
 sudo apt-get upgrade
+sudo update-alternatives --config editor
 sudo apt-get install --no-install-recommends gnome-panel -y
 sudo apt-get install gnome-tweak-tool libappindicator1 -y
-sudo apt-get install software-properties-common curl -y
+sudo apt-get install software-properties-common curl perl gcc -y
 sudo apt-get install libcurl3-gnutls libcurl4-openssl-dev -y
 sudo apt-get install libcurl4 -y
 sudo apt-get update
