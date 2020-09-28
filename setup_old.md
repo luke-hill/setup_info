@@ -11,26 +11,30 @@
 echo "set backspace=2" >> ~/.vimrc
 echo "set nocompatible" >> ~/.vimrc
 
+#################### Git setup ###########################
+sudo apt install git -y
+git config --global user.email "lukehill_uk@hotmail.com"
+git config --global user.name "Luke Hill"
+
 #################### GFX setup ############################
 ubuntu-drivers devices
-sudo ubuntu-drivers autoinstall
+# sudo ubuntu-drivers autoinstall - This I think causes issues
 # Ignore the italicised writing below, thats VI being stupid!!
 echo "This will look like it's wiping files. But don't worry it won't screw with C+P"
 sudo apt-get purge '*nvidia*'
-sudo add-apt-repository ppa:graphics-drivers
+sudo add-apt-repository ppa:graphics-drivers -y
 sudo apt-get update
 
 ~~~~~~~~~~~~~~~~~~~~ Generic setup ~~~~~~~~~~~~~~~~~~~~~~~~
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install --no-install-recommends gnome-panel
-sudo apt-get install gnome-tweak-tool libappindicator1
-sudo apt install git
-sudo apt-get install software-properties-common
-sudo apt-get install curl
-sudo apt-get install libcurl3-gnutls libcurl4-openssl-dev
-sudo apt-get install libcurl4
-sudo apt install vim
+sudo apt-get install --no-install-recommends gnome-panel -y
+sudo apt-get install gnome-tweak-tool libappindicator1 -y
+sudo apt-get install software-properties-common -y
+sudo apt-get install curl -y
+sudo apt-get install libcurl3-gnutls libcurl4-openssl-dev -y
+sudo apt-get install libcurl4 -y
+sudo apt install vim -y
 sudo apt-get update
 sudo apt install mysql-workbench
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc
