@@ -1,20 +1,21 @@
 # Install ubuntu 18.04 - Remember the installation could be tricky.
 
-~~~~~~~~~~~~~~~~~~~~ Manual setup ~~~~~~~~~~~~~~~~~~~~~~~~~
+#################### Manual setup #########################
 # Google Chrome
 # Slack
 # Language Packs / Translation Packs
 # Add Coding directory to path (~/Code)
 # Download chromedriver and geckodriver AND place them on PATH
 
-~~~~~~~~~~~~~~~~~~~~ Vim setup ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#################### Vim setup ############################
 echo "set backspace=2" >> ~/.vimrc
 echo "set nocompatible" >> ~/.vimrc
 
-~~~~~~~~~~~~~~~~~~~~ GFX setup ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#################### GFX setup ############################
 ubuntu-drivers devices
 sudo ubuntu-drivers autoinstall
 # Ignore the italicised writing below, thats VI being stupid!!
+echo "This will look like it's wiping files. But don't worry it won't screw with C+P"
 sudo apt-get purge '*nvidia*'
 sudo add-apt-repository ppa:graphics-drivers
 sudo apt-get update
