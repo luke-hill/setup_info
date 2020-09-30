@@ -11,6 +11,7 @@
 sudo apt install vim -y
 echo "set backspace=2" >> ~/.vimrc
 echo "set nocompatible" >> ~/.vimrc
+sudo update-alternatives --config editor
 
 #################### Git setup ############################
 sudo apt install git -y
@@ -20,7 +21,6 @@ git config --global user.name "Luke Hill"
 #################### Generic setup ########################
 sudo apt-get update
 sudo apt-get upgrade
-sudo update-alternatives --config editor
 sudo apt-get install --no-install-recommends gnome-panel -y
 sudo apt-get install gnome-tweak-tool libappindicator1 -y
 sudo apt-get install software-properties-common curl perl gcc -y
