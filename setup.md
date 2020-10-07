@@ -59,6 +59,13 @@ sudo apt-get update -y
 sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod g+rwx "$HOME/.docker" -R
+# Restart your machine at this point!
+sudo systemctl restart docker
+sudo chmod 666 /var/run/docker.sock
 
 ################### NVM setup #############################
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
