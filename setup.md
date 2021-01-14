@@ -67,9 +67,11 @@ sudo chmod g+rwx "$HOME/.docker" -R
 sudo systemctl restart docker
 sudo chmod 666 /var/run/docker.sock
 
-################### NVM setup #############################
+################### JS setup #############################
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-sudo apt update
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install yarn
 
 ################### RVM setup #############################
 # Do this last because it seems to overwrite some of the other settings
