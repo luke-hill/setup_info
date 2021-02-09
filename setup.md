@@ -80,9 +80,8 @@ sudo apt-add-repository -y ppa:rael-gc/rvm
 sudo apt-get install rvm
 source /etc/profile.d/rvm.sh
 rvm autolibs disable
-rvm install 2.4
-rvm install 2.5
-rvm install 2.6
-rvm install 2.7
+rvm install 2.4.10
+rvm install 2.5.8
+rvm install 2.6.6
+rvm install 2.7.2
 rvm install jruby
-
