@@ -70,8 +70,7 @@ sudo chmod 666 /var/run/docker.sock
 ################### JS setup #############################
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update && sudo apt install yarn
+sudo apt update
 
 ################### RVM setup #############################
 # Do this last because it seems to overwrite some of the other settings
@@ -80,8 +79,5 @@ sudo apt-add-repository -y ppa:rael-gc/rvm
 sudo apt-get install rvm
 source /etc/profile.d/rvm.sh
 rvm autolibs disable
-rvm install 2.4.10
-rvm install 2.5.8
-rvm install 2.6.6
-rvm install 2.7.2
+rvm install 2.4.10 && rvm install 2.5.8 && rvm install 2.6.6 && rvm install 2.7.2
 rvm install jruby
