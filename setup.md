@@ -33,6 +33,7 @@ sudo apt-get install awscli libreoffice --fix-missing -y
 sudo apt-get install python3-pip -y
 sudo apt-get install openjdk-8-jdk libssl1.0-dev --fix-missing -y
 sudo apt update --fix-missing
+sudo apt-get install shared-mime-info
 
 #################### Google Chrome setup ##################
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -81,3 +82,8 @@ source /etc/profile.d/rvm.sh
 rvm autolibs disable
 rvm install 2.4.10 && rvm install 2.5.8 && rvm install 2.6.6 && rvm install 2.7.2
 rvm install jruby
+
+################### Keybase setup #########################
+curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
+sudo apt install ./keybase_amd64.deb
+run_keybase
