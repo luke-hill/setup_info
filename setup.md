@@ -26,6 +26,7 @@ sudo apt-get install gnome-tweak-tool libappindicator1 -y
 sudo apt-get install software-properties-common curl perl gcc -y
 sudo apt-get install libcurl3-gnutls libcurl4-openssl-dev -y
 sudo apt-get install libcurl4 jq libgmp3-dev -y
+sudo apt-get install libpq-dev libmagic-dev
 sudo apt-get update
 sudo apt install mysql-workbench --fix-missing -y
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc
