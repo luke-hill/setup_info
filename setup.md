@@ -17,6 +17,9 @@ sudo update-alternatives --config editor
 sudo apt install git -y
 git config --global user.email "lukehill_uk@hotmail.com"
 git config --global user.name "Luke Hill"
+touch ~/.gitignore_global
+echo ".idea/*" >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 
 #################### Generic setup ########################
 sudo apt-get update
