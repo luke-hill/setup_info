@@ -8,6 +8,8 @@ In my case it is a 32 GB size machine and will call it the SMALL VM
 Create a new Virtual Machine with the new desired size
 In my case I decided to make a new a 70 GB Virtual Machine, while restoring the contents of the small machine inside this new VM and I will refer to this as the LARGE VM
 
+BEFORE ANYTHING MAKE SURE YOU ARE ON THE HOST OS, AND YOU ARE INSIDE C:\Program Files\Oracle\VirtualBox (OR EQUIVALENT)
+
 Run the command VBoxManage list hdds or Open the Virtual Media Manager to obtain the the GUID of the SMALL VM (origin) and also the GUID of the LARGE VM (destination)
 With those GUIDs build the following command
 
