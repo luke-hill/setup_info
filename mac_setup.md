@@ -19,4 +19,5 @@ $ rvm install 3.0.2
 # The fix below is to remedy an Issue on Big Sur
 # See https://github.com/rvm/rvm/issues/5047#issuecomment-844985557
 export warnflags=-Wno-error=implicit-function-declaration
+$ softwareupdate --install-rosetta
 
