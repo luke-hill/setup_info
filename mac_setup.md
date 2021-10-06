@@ -20,4 +20,15 @@ $ rvm install 3.0.2
 # See https://github.com/rvm/rvm/issues/5047#issuecomment-844985557
 export warnflags=-Wno-error=implicit-function-declaration
 $ softwareupdate --install-rosetta
+$ brew uninstall --ignore-dependencies node 
+$ brew uninstall --force node
+$ brew update 
+$ brew install nvm 
+$ mkdir ~/.nvm
+$ echo "export NVM_DIR=\"$HOME/.nvm\"" >> ~/.zshrc
+# To load nvm into process
+$ echo "[ -s \"/opt/homebrew/opt/nvm/nvm.sh\" ] && . \"/opt/homebrew/opt/nvm/nvm.sh\"" >> ~/.zshrc
+$ echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.zshrc
+# To load nvm bash completion
+$ echo "[ -s \"/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm\" ] && . \"/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm\"" >> ~/.zshrc
 
