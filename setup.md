@@ -1,27 +1,34 @@
-# Install ubuntu 18.04 - Remember the installation could be tricky.
+## Install ubuntu 18.04 - Remember the installation could be tricky.
 
-#################### Manual setup #########################
+### Manual setup
+```
 # Google Chrome
 # Slack
 # Any Language Packs / Translation Packs required
 # Add Coding directory to path (~/Code)
 # Download chromedriver and geckodriver AND place them on PATH
+```
 
-#################### Vim setup ############################
+### Vim setup
+```
 sudo apt install vim -y
 echo "set backspace=2" >> ~/.vimrc
 echo "set nocompatible" >> ~/.vimrc
 sudo update-alternatives --config editor
+```
 
-#################### Git setup ############################
+### Git setup
+```
 sudo apt install git -y
 git config --global user.email "lukehill_uk@hotmail.com"
 git config --global user.name "Luke Hill"
 touch ~/.gitignore_global
 echo ".idea/*" >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
+```
 
-#################### Generic setup ########################
+### Generic setup
+```
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install --no-install-recommends gnome-panel -y
@@ -38,20 +45,28 @@ sudo apt-get install python3-pip -y
 sudo apt-get install openjdk-8-jdk libssl1.0-dev --fix-missing -y
 sudo apt update --fix-missing
 sudo apt-get install shared-mime-info
+sudo apt-get update 
+sudo apt-get install build-essential gcc make perl dkms
+```
 
-#################### Google Chrome setup ##################
+### Google Chrome
+```
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb -y
 rm ./google-chrome-stable_current_amd64.deb
+```
 
-#################### Bash aliases setup ###################
+### Bash aliases
+```
 echo "# Bash alias created as advised by ~/.bashrc" >> ~/.bash_aliases
 echo "# Make a human readable path accessible at 'path' - Created on $(date)" >> ~/.bash_aliases
 echo "alias path='echo \$PATH | tr \":\" \"\n\"'" >> ~/.bash_aliases
 echo "# Add Timestamps to Terminal Windows - Created on $(date)" >> ~/.bash_aliases
 echo "export PS1=\"[\\t] \$PS1\"" >> ~/.bash_aliases
+```
 
-#################### Docker setup #########################
+### Docker
+```
 sudo apt-get remove docker docker-engine docker.io containerd runc -y
 sudo apt-get install apt-transport-https ca-certificates software-properties-common -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -71,24 +86,31 @@ sudo chmod g+rwx "$HOME/.docker" -R
 # Restart your machine at this point!
 sudo systemctl restart docker
 sudo chmod 666 /var/run/docker.sock
+```
 
-################### JS setup #############################
+### Javascript
+```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 sudo apt update
+```
 
-################### RVM setup #############################
+### Ruby
+```
 # Do this last because it seems to overwrite some of the other settings
-
 sudo apt-add-repository -y ppa:rael-gc/rvm
 sudo apt-get install rvm
 source /etc/profile.d/rvm.sh
 rvm autolibs disable
 rvm install 2.4.10 && rvm install 2.5.8 && rvm install 2.6.6 && rvm install 2.7.2
 rvm install jruby
+```
 
-################### Keybase setup #########################
+### Keybase
+```
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
 sudo apt install -y ./keybase_amd64.deb
 run_keybase
 rm ./keybase_amd64.deb
+```
+
