@@ -37,16 +37,15 @@ sudo apt-get install software-properties-common curl perl gcc -y
 sudo apt-get install libcurl3-gnutls libcurl4-openssl-dev -y
 sudo apt-get install libcurl4 jq libgmp3-dev -y
 sudo apt-get install libpq-dev libmagic-dev
-sudo apt-get update
 sudo apt install mysql-workbench --fix-missing -y
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc
 sudo apt-get install awscli libreoffice --fix-missing -y
 sudo apt-get install python3-pip -y
 sudo apt-get install openjdk-8-jdk libssl1.0-dev --fix-missing -y
 sudo apt update --fix-missing
-sudo apt-get install shared-mime-info
-sudo apt-get update 
-sudo apt-get install build-essential gcc make perl dkms
+sudo apt-get install shared-mime-info -y
+sudo apt-get install build-essential gcc make perl dkms -y
+sudo apt-get update
 ```
 
 ### Google Chrome
