@@ -1,3 +1,4 @@
+```
 # Install brew from http://brew.sh/
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew doctor
@@ -31,4 +32,4 @@ $ echo "[ -s \"/opt/homebrew/opt/nvm/nvm.sh\" ] && . \"/opt/homebrew/opt/nvm/nvm
 $ echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.zshrc
 # To load nvm bash completion
 $ echo "[ -s \"/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm\" ] && . \"/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm\"" >> ~/.zshrc
-
+```

@@ -1,3 +1,4 @@
+```
 apt-get remove -y virtualbox-guest-x11
 apt-get remove -y virtualbox-guest-dkms
 apt-get remove -y virtualbox-guest-utils
@@ -8,3 +9,4 @@ mount VBoxGuestAdditions_6.1.2.iso /media/iso -o loop
 /media/iso/VBoxLinuxAdditions.run
 yes
 reboot
+```
