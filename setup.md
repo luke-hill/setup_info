@@ -38,6 +38,7 @@ sudo apt-get install libcurl3-gnutls libcurl4-openssl-dev -y
 sudo apt-get install libcurl4 jq libgmp3-dev -y
 sudo apt-get install libpq-dev libmagic-dev
 sudo apt install mysql-workbench --fix-missing -y
+echo "# Make the shell case-insensitive for autocompletions - Created on $(date)" | sudo tee -a /etc/inputrc
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc
 sudo apt-get install awscli libreoffice --fix-missing -y
 sudo apt-get install python3-pip -y
