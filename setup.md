@@ -41,7 +41,7 @@ sudo apt install mysql-workbench --fix-missing -y
 echo "# Make the shell case-insensitive for autocompletions - Created on $(date)" | sudo tee -a /etc/inputrc
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc
 sudo apt-get install awscli libreoffice --fix-missing -y
-sudo apt-get -y install network-manager-openvpn
+sudo apt install openvpn -y
 sudo apt-get install python3-pip -y
 sudo apt-get install openjdk-8-jdk libssl1.0-dev --fix-missing -y
 sudo apt update --fix-missing
