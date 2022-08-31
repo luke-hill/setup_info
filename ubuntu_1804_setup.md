@@ -34,9 +34,8 @@ sudo apt-get upgrade
 sudo apt-get install --no-install-recommends gnome-panel -y
 sudo apt-get install gnome-tweak-tool libappindicator1 -y
 sudo apt-get install software-properties-common curl perl gcc -y
-sudo apt-get install libcurl3-gnutls libcurl4-openssl-dev -y
-sudo apt-get install libcurl4 jq libgmp3-dev -y
-sudo apt-get install libpq-dev libmagic-dev
+sudo apt-get install libcurl4 libcurl3-gnutls libcurl4-openssl-dev -y
+sudo apt-get install jq libgmp3-dev libpq-dev libmagic-dev -y
 sudo apt install mysql-workbench --fix-missing -y
 echo "# Make the shell case-insensitive for autocompletions - Created on $(date)" | sudo tee -a /etc/inputrc
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc
