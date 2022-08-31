@@ -104,7 +104,7 @@ source /etc/profile.d/rvm.sh
 rvm fix-permissions system
 rvm group add rvm $USER
 rvm autolibs disable
-rvm install 2.4.10 && rvm install 2.5.9 && rvm install 2.6.8 && rvm install 2.7.4
+rvm install 2.5.9 && rvm install 2.6.10 && rvm install 2.7.6 && rvm install 3.0.4 && rvm install 3.1.2
 rvm install jruby
 ```
 
