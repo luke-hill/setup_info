@@ -1,3 +1,6 @@
+echo "Attempting a full clearance of daemon clipboard processes"
+VBOX_RELEASE_LOG_DEST=file VBOX_RELEASE_LOG=all.e.l.l2.f VBoxClient --clipboard --nodaemon
+sleep 0.5
 echo "Killing Clipboard"
 pkill 'VBoxClient --clipboard' -f
 sleep 0.5
