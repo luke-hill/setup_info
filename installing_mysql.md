@@ -8,4 +8,5 @@ $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 467B942D3A79BD29
 $ sudo apt-cache policy mysql-server
 # Replace the VER value below with the value desired
 $ sudo apt install -f mysql-client=VER* mysql-community-server=VER* mysql-server=VER*
+$ sudo apt-get install libmariadb-dev libmysqlclient-dev
 ```
