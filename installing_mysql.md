@@ -9,4 +9,5 @@ $ sudo apt-cache policy mysql-server
 # Replace the VER value below with the value desired
 $ sudo apt install -f mysql-client=VER* mysql-community-server=VER* mysql-server=VER*
 $ sudo apt-get install libmariadb-dev libmysqlclient-dev
+$ gem install mysql2 -- --srcdir=/usr/local/mysql/include
 ```
