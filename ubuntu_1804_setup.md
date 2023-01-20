@@ -36,6 +36,8 @@ echo "# Make a human readable path accessible at 'path' - Created on $(date)" >>
 echo "alias path='echo \$PATH | tr \":\" \"\n\"'" >> ~/.bash_aliases
 echo "# Add Timestamps to Terminal Windows - Created on $(date)" >> ~/.bash_aliases
 echo "export PS1=\"[\\t] \$PS1\"" >> ~/.bash_aliases
+echo "# Create a docker-compose alias to provide v1 style commands - Created on $(date)" >> ~/.bash_aliases
+echo 'alias docker-compose="docker compose"' >> ~/.bash_aliases
 ```
 
 ### Generic setup
