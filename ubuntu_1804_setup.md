@@ -31,6 +31,11 @@ git config --global core.excludesfile ~/.gitignore_global
 ```
 echo "# Make the shell case-insensitive for autocompletions - Created on $(date)" | sudo tee -a /etc/inputrc
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc
+echo "# Bash alias created as advised by ~/.bashrc" >> ~/.bash_aliases
+echo "# Make a human readable path accessible at 'path' - Created on $(date)" >> ~/.bash_aliases
+echo "alias path='echo \$PATH | tr \":\" \"\n\"'" >> ~/.bash_aliases
+echo "# Add Timestamps to Terminal Windows - Created on $(date)" >> ~/.bash_aliases
+echo "export PS1=\"[\\t] \$PS1\"" >> ~/.bash_aliases
 ```
 
 ### Generic setup
@@ -52,15 +57,6 @@ sudo apt-get install shared-mime-info build-essential gcc make perl dkms -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb -y
 rm ./google-chrome-stable_current_amd64.deb
-```
-
-### Bash aliases
-```
-echo "# Bash alias created as advised by ~/.bashrc" >> ~/.bash_aliases
-echo "# Make a human readable path accessible at 'path' - Created on $(date)" >> ~/.bash_aliases
-echo "alias path='echo \$PATH | tr \":\" \"\n\"'" >> ~/.bash_aliases
-echo "# Add Timestamps to Terminal Windows - Created on $(date)" >> ~/.bash_aliases
-echo "export PS1=\"[\\t] \$PS1\"" >> ~/.bash_aliases
 ```
 
 ### Docker
@@ -103,8 +99,7 @@ source /etc/profile.d/rvm.sh
 rvm fix-permissions system
 rvm group add rvm $USER
 rvm autolibs disable
-rvm install 2.5.9 && rvm install 2.6.10 && rvm install 2.7.6 && rvm install 3.0.4 && rvm install 3.1.2
-rvm install jruby
+rvm install 2.6.10 && rvm install 2.7.6 && rvm install 3.0.4 && rvm install 3.1.2 && rvm install 3.2.0
 ```
 
 ### Keybase
