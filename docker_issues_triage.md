@@ -10,4 +10,6 @@ Issue: openssl-dev name on non-alpine
 
 Answer: libssl-dev or libssl1.0-dev
 
+Issue: Cannot install any gems or build anything correctly due to DNS / connection issues
 
+Answer: sudo service network-manager restart
