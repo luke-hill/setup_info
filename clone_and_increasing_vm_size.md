@@ -36,6 +36,31 @@ Clone medium created in format 'VDI'. UUID: 7ec73dfa-c4f4-467a-97a3-2c33c7e0a5e5
 
 > NB: On 27/2/23 I managed to complete this across 2 different hard disk locations (Do not try this onto a portable it will crash and burn!
 
+```
+C:\Program Files\Oracle\VirtualBox>VBoxManage clonemedium 133eb63f-6099-4e47-a077-884e3f186fdc b6c1101a-73fe-4a8c-a893-3518b4608134 --existing
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Clone medium created in format 'VDI'. UUID: b6c1101a-73fe-4a8c-a893-3518b4608134
+
+C:\Program Files\Oracle\VirtualBox>VBoxManage list hdds
+UUID:           133eb63f-6099-4e47-a077-884e3f186fdc
+Parent UUID:    base
+State:          created
+Type:           normal (base)
+Location:       C:\Users\Luke\VirtualBox VMs\Ubuntu 18.04 LTS\Ubuntu 18.04 LTS.vdi
+Storage format: VDI
+Capacity:       40960 MBytes
+Encryption:     disabled
+
+UUID:           b6c1101a-73fe-4a8c-a893-3518b4608134
+Parent UUID:    base
+State:          locked write
+Type:           normal (base)
+Location:       E:\Ubuntu 18.04.6\Ubuntu 18.04.6.vdi
+Storage format: VDI
+Capacity:       102400 MBytes
+Encryption:     disabled
+```
+
 Start the new LARGE VM that you created on step 2.
 
 Load up `gparted` from Software. Observe the new unallocated space
