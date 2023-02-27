@@ -34,11 +34,14 @@ $ VBoxManage clonemedium cf7812d2-2edd-47b0-8f7c-64263b66ceb3 7ec73dfa-c4f4-467a
 Clone medium created in format 'VDI'. UUID: 7ec73dfa-c4f4-467a-97a3-2c33c7e0a5e5
 ```
 
+> NB: On 27/2/23 I managed to complete this across 2 different hard disk locations (Do not try this onto a portable it will crash and burn!
+
 Start the new LARGE VM that you created on step 2.
 
-Check in the Computer Managment window tool that the machine has in fact more size unused/unformat space
+Load up `gparted` from Software. Observe the new unallocated space
 
-Using the gparted-live*.iso, "insert it" into the new virtual machine and reboot it
+Reallocate the new space 100% to the existing /dev/sda1
 
-Boot into the gparted environment & Grow your partition and save changes
+Click Edit -> Apply all operations. This will then permanently grow your hard drive
+
 
