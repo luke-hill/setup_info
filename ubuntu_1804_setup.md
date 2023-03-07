@@ -45,13 +45,13 @@ echo 'alias docker-compose="docker compose"' >> ~/.bash_aliases
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install --no-install-recommends gnome-panel -y
-sudo apt-get install gnome-tweak-tool libappindicator1 software-properties-common curl perl gcc ncdu -y
-sudo apt-get install libcurl4 libcurl3-gnutls libcurl4-openssl-dev jq libgmp3-dev libpq-dev libmagic-dev -y
-sudo apt install mysql-workbench --fix-missing -y
-sudo apt-get install awscli libreoffice --fix-missing python3-pip openjdk-8-jdk libssl1.0-dev --fix-missing -y
+sudo apt-get install build-essential gnome-tweak-tool libappindicator1 shared-mime-info software-properties-common curl perl gcc make dkms ncdu jq -y
+sudo apt-get install curl perl gcc make dkms ncdu jq -y
+sudo apt-get install libpq-dev libmagic-dev libcurl3-gnutls libgmp3-dev libcurl4 libcurl4-openssl-dev -y
+sudo apt-get install mysql-workbench --fix-missing -y
+sudo apt-get install awscli libreoffice python3-pip openjdk-8-jdk libssl1.0-dev --fix-missing -y
 sudo apt install openvpn -y
 sudo apt update --fix-missing
-sudo apt-get install shared-mime-info build-essential gcc make perl dkms -y
 ```
 
 ### Google Chrome
@@ -106,4 +106,3 @@ sudo apt install -y ./keybase_amd64.deb
 run_keybase
 rm ./keybase_amd64.deb
 ```
-
