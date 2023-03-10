@@ -47,7 +47,7 @@ sudo apt-get upgrade
 sudo apt-get install --no-install-recommends gnome-panel -y
 sudo apt-get install build-essential gnome-tweak-tool libappindicator1 shared-mime-info software-properties-common curl perl gcc make dkms ncdu jq -y
 sudo apt-get install libpq-dev libmagic-dev libcurl3-gnutls libgmp3-dev libcurl4 libcurl4-openssl-dev -y
-sudo apt-get install awscli libreoffice python3-pip openjdk-8-jdk -y
+sudo apt-get install awscli libreoffice python3-pip openjdk-11-jdk -y
 sudo apt-get install openvpn -y
 ```
 
