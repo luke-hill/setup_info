@@ -91,5 +91,12 @@ rm ./keybase_amd64.deb
 ### Ruby
 ```
 # Do this last because it seems to overwrite some of the other settings
-TBC - Use 18.04 as a base
+sudo apt-add-repository -y ppa:rael-gc/rvm
+sudo apt-get install rvm
+source /etc/profile.d/rvm.sh
+rvm fix-permissions system
+rvm group add rvm $USER
+# Restart your machine at this point!
+rvm autolibs disable
+rvm install 2.6.10 && rvm install 2.7.7 && rvm install 3.0.5 && rvm install 3.1.3 && rvm install 3.2.1
 ```
