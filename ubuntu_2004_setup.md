@@ -40,7 +40,7 @@ echo "# Create a docker-compose alias to provide v1 style commands - Created on 
 echo 'alias docker-compose="docker compose"' >> ~/.bash_aliases
 ```
 
-### Generic setup
+### Dev APT packages
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -99,4 +99,9 @@ rvm group add rvm $USER
 # Restart your machine at this point!
 rvm autolibs disable
 rvm install 2.6.10 && rvm install 2.7.7 && rvm install 3.0.5 && rvm install 3.1.3 && rvm install 3.2.1
+```
+
+### Cleanup
+```
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y
 ```
