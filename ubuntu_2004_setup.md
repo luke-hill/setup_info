@@ -74,12 +74,18 @@ sudo chmod 666 /var/run/docker.sock # Moved above as a test
 
 ### Javascript
 ```
-TBC - Use 18.04 as a base
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+sudo apt-get update
+# Close your terminal and then re-open it
+nvm install 8 && nvm install 10 && nvm install 12 # Whilst at Ex-Ordo we're using old node versions
 ```
 
 ### Keybase
 ```
-TBC - Use 18.04 as a base
+curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
+sudo apt-get install -y ./keybase_amd64.deb
+run_keybase
+rm ./keybase_amd64.deb
 ```
 
 ### Ruby
