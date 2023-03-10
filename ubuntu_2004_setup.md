@@ -59,14 +59,14 @@ sudo apt-get install apt-transport-https ca-certificates software-properties-com
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get update
-sudo apt-get install docker-ce docker-compose-plugin -y
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 apt-cache madison docker-ce
 sudo groupadd docker # Possibly redundant step in 20.04 onwards
 sudo usermod -aG docker ${USER}
 sudo systemctl restart docker
 sudo chmod 666 /var/run/docker.sock
-sudo chown "$USER":"$USER" /home/"$USER"/.docker -R # Failing - No dir
-sudo chmod g+rwx "$HOME/.docker" -R # Failing - No dir
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R # This fails - Leaving in for now. Will remove at a later date if not needed
+sudo chmod g+rwx "$HOME/.docker" -R # This fails - Leaving in for now. Will remove at a later date if not needed
 # Restart your machine at this point!
 sudo systemctl restart docker # Moved above as a test
 sudo chmod 666 /var/run/docker.sock # Moved above as a test
