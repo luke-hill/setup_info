@@ -3,24 +3,41 @@
 This is the full installation instructions I did for the new laptop for my job as
 QA Lead at Ex-Ordo
 
-### Manual setup
+### Initial files / software
 ```
-TBC - Use 18.04 as a base
+# sudo apt-get install google-chrome-stable
+# sudo snap install slack
+# sudoedit /etc/environment # Then add /home/luke/Code
 ```
 
 ### Vim setup
 ```
-TBC - Use 18.04 as a base
+sudo apt install vim -y
+echo "set backspace=2" >> ~/.vimrc
+echo "set nocompatible" >> ~/.vimrc
+sudo update-alternatives --config editor
 ```
 
 ### Git setup
 ```
-TBC - Use 18.04 as a base
+sudo apt install git -y
+git config --global user.email "lukehill_uk@hotmail.com"
+git config --global user.name "Luke Hill"
+echo ".idea/*" >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 ```
 
 ### Aliases
 ```
-TBC - Use 18.04 as a base
+echo "# Make the shell case-insensitive for autocompletions - Created on $(date)" | sudo tee -a /etc/inputrc
+echo set completion-ignore-case on | sudo tee -a /etc/inputrc
+echo "# Bash alias created as advised by ~/.bashrc" >> ~/.bash_aliases
+echo "# Make a human readable path accessible at 'path' - Created on $(date)" >> ~/.bash_aliases
+echo "alias path='echo \$PATH | tr \":\" \"\n\"'" >> ~/.bash_aliases
+echo "# Add Timestamps to Terminal Windows - Created on $(date)" >> ~/.bash_aliases
+echo "export PS1=\"[\\t] \$PS1\"" >> ~/.bash_aliases
+echo "# Create a docker-compose alias to provide v1 style commands - Created on $(date)" >> ~/.bash_aliases
+echo 'alias docker-compose="docker compose"' >> ~/.bash_aliases
 ```
 
 ### Generic setup
