@@ -12,7 +12,7 @@ QA Lead at Ex-Ordo
 
 ### Vim setup
 ```
-sudo apt install vim -y
+sudo apt-get install vim -y
 echo "set backspace=2" >> ~/.vimrc
 echo "set nocompatible" >> ~/.vimrc
 sudo update-alternatives --config editor
@@ -20,7 +20,7 @@ sudo update-alternatives --config editor
 
 ### Git setup
 ```
-sudo apt install git -y
+sudo apt-get install git -y
 git config --global user.email "lukehill_uk@hotmail.com"
 git config --global user.name "Luke Hill"
 echo ".idea/*" >> ~/.gitignore_global
