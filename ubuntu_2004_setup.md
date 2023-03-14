@@ -100,6 +100,7 @@ rm ./keybase_amd64.deb
 ### Ruby
 ```
 # Do this last because it seems to overwrite some of the other settings
+# See https://github.com/rvm/rvm/issues/4915 for issues installing really old rubies
 sudo apt-add-repository -y ppa:rael-gc/rvm
 sudo apt-get install rvm
 source /etc/profile.d/rvm.sh
