@@ -42,8 +42,7 @@ echo 'alias docker-compose="docker compose"' >> ~/.bash_aliases
 
 ### Dev APT packages
 ```
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install --no-install-recommends gnome-panel -y
 sudo apt-get install build-essential gnome-tweak-tool libappindicator1 shared-mime-info software-properties-common curl perl gcc make dkms ncdu jq -y
 sudo apt-get install libpq-dev libmagic-dev libcurl3-gnutls libgmp3-dev libcurl4 libcurl4-openssl-dev -y
@@ -103,5 +102,5 @@ rvm install 2.6.10 && rvm install 2.7.7 && rvm install 3.0.5 && rvm install 3.1.
 
 ### Cleanup
 ```
-sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y
 ```
