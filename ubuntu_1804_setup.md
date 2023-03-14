@@ -1,4 +1,8 @@
-## Install ubuntu 18.04 - Remember the installation could be tricky.
+## Install ubuntu 18.04 on a Virtual Machine
+
+Remember the installation could be tricky. We need the pre-requisites
+- Oracle Virtualbox (V6 seems to have more reliability than V7!)
+- Ubuntu 18.04 ISO (Latest ver)
 
 ### Manual setup
 ```
