@@ -51,6 +51,16 @@ sudo apt-get install libpq-dev libmagic-dev libcurl3-gnutls libgmp3-dev libcurl4
 sudo apt-get install awscli libreoffice python3-pip openjdk-11-jdk -y
 ```
 
+### VPN
+```
+sudo sh -c 'echo "# OpenVPN3 Official Apt Repository for openvpn3.
+deb https://swupdate.openvpn.net/community/openvpn3/repos focal main" >> /etc/apt/sources.list.d/openvpn3.list'
+wget https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub && sudo apt-key add openvpn-repo-pkg-key.pub
+rm ./openvpn-repo-pkg-key.pub
+sudo apt-get update
+sudo apt-get install openvpn3
+```
+
 ### Docker
 ```
 sudo apt-get remove docker docker-engine docker.io containerd runc -y
