@@ -46,7 +46,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install --no-install-recommends gnome-panel -y
 sudo apt-get install apt-transport-https ca-certificates software-properties-common -y
 sudo apt-get install build-essential gnome-tweak-tool libappindicator1 shared-mime-info software-properties-common -y
-sudo apt-get install curl dkms gcc jq make ncdu perl wget -y
+sudo apt-get install curl dkms gcc jq make ncdu perl wget gdebi -y
 sudo apt-get install libpq-dev libmagic-dev libcurl3-gnutls libgmp3-dev libcurl4 libcurl4-openssl-dev -y
 sudo apt-get install awscli libreoffice python3-pip openjdk-11-jdk -y
 ```
