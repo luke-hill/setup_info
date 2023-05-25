@@ -5,9 +5,10 @@ QA Lead at Ex-Ordo
 
 ### Initial files / software
 ```
-# sudo apt-get install google-chrome-stable
-# sudo snap install slack
-# sudoedit /etc/environment # Then add /home/luke/Code
+sudo apt-get install google-chrome-stable
+sudo snap install slack
+sudo apt-get install libheif-examples
+sudoedit /etc/environment # Then add /home/luke/Code
 ```
 
 ### Vim setup
