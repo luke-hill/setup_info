@@ -106,6 +106,7 @@ sudo apt-add-repository -y ppa:rael-gc/rvm
 sudo apt-get install rvm
 source /etc/profile.d/rvm.sh
 rvm fix-permissions system
+rvm fix-permissions user
 rvm group add rvm $USER
 # Restart your machine at this point!
 rvm autolibs disable
