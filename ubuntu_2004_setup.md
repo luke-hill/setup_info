@@ -1,7 +1,7 @@
 ## Install ubuntu 20.04
 
 This is the full installation instructions I did for the new laptop for my job as
-QA Lead at Ex-Ordo
+QA Lead at Ex-Ordo in 2023
 
 ### Initial files / software
 ```
