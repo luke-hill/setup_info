@@ -13,3 +13,5 @@ DEV Apt Package issues
 - Note, selecting `'libcurl4t64'` instead of `'libcurl4'`
 - `awscli` doesn't exist
 - `pinta` doesn't exist
+- Change `openjdk-11-jdk` for `openjdk-21-jdk`
+  
