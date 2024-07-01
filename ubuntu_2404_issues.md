@@ -1,11 +1,13 @@
-LibFFI with ffi gem
+## LibFFI with ffi gem
 ```
 $ gem uninstall ffi
 $ gem install ffi
 ```
+
+## VPN
 Openvpn3 needs new apt source - https://github.com/OpenVPN/openvpn3-linux/issues/253
 
-DEV Apt Package issues
+## DEV Apt Package issues
 
 - `libappindicator1` doesn't exist
 - `gnome-tweaks` is the new name for `gnome-tweak-tool`
@@ -15,3 +17,5 @@ DEV Apt Package issues
 - `pinta` doesn't exist
 - Change `openjdk-11-jdk` for `openjdk-21-jdk`
   
+## RVM issues
+Downgrade the version of libssl `sudo apt install libssl-dev=1.1.1l-1ubuntu1.4`
