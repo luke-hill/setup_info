@@ -112,7 +112,7 @@ rvm fix-permissions user
 rvm group add rvm $USER
 # Restart your machine at this point!
 rvm autolibs disable
-rvm install 2.6.10 && rvm install 2.7.7 && rvm install 3.0.5 && rvm install 3.1.3 && rvm install 3.2.1
+rvm install 2.6.10 && rvm install 2.7.8 && rvm install 3.0.7 && rvm install 3.1.6 && rvm install 3.2.4 && rvm install 3.3.3
 ```
 
 ### Cleanup
