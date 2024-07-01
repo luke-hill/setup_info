@@ -12,3 +12,4 @@ DEV Apt Package issues
 - `libcurl3t64-gnutls` instead of `libcurl3-gnutls`
 - Note, selecting `'libcurl4t64'` instead of `'libcurl4'`
 - `awscli` doesn't exist
+- `pinta` doesn't exist
