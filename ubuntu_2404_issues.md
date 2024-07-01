@@ -11,4 +11,4 @@ DEV Apt Package issues
 - `gnome-tweaks` is the new name for `gnome-tweak-tool`
 - `libcurl3t64-gnutls` instead of `libcurl3-gnutls`
 - Note, selecting `'libcurl4t64'` instead of `'libcurl4'`
-
+- `awscli` doesn't exist
