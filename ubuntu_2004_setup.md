@@ -16,7 +16,7 @@ sudoedit /etc/environment # Then add /home/luke/Code
 sudo apt-get install vim -y
 echo "set backspace=2" >> ~/.vimrc
 echo "set nocompatible" >> ~/.vimrc
-sudo update-alternatives --config editor
+sudo update-alternatives --config editor # Pick option 3
 ```
 
 ### Git setup
