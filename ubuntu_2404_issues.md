@@ -5,3 +5,10 @@ $ gem install ffi
 ```
 Openvpn3 needs new apt source - https://github.com/OpenVPN/openvpn3-linux/issues/253
 
+DEV Apt Package issues
+
+- `libappindicator1` doesn't exist
+- `gnome-tweaks` is the new name for `gnome-tweak-tool`
+- `libcurl3t64-gnutls` instead of `libcurl3-gnutls`
+- Note, selecting `'libcurl4t64'` instead of `'libcurl4'`
+
