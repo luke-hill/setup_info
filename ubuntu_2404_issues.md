@@ -19,3 +19,7 @@ Openvpn3 needs new apt source - https://github.com/OpenVPN/openvpn3-linux/issues
   
 ## RVM issues
 Downgrade the version of libssl `sudo apt install libssl-dev=1.1.1l-1ubuntu1.4`
+
+The above doesn't fully work to them install Ruby 3.0 and below. So try the following instead
+
+https://deanpcmad.com/2024/installing-older-ruby-versions-on-ubuntu-24-04-and-22-04/
