@@ -23,3 +23,10 @@ Downgrade the version of libssl `sudo apt install libssl-dev=1.1.1l-1ubuntu1.4`
 The above doesn't fully work to them install Ruby 3.0 and below. So try the following instead
 
 https://deanpcmad.com/2024/installing-older-ruby-versions-on-ubuntu-24-04-and-22-04/
+
+```
+# Unpack the openssl information from the above link. Then run the following 2 commands after each other
+
+export OPENSSL=$HOME/.openssl/openssl-1.1.1w
+rvm install 2.7.8 --with-openssl-dir=$OPENSSL
+```
