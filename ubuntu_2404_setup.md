@@ -49,14 +49,7 @@ sudo apt-get install apt-transport-https ca-certificates software-properties-com
 sudo apt-get install build-essential gnome-tweak-tool libappindicator3.1 shared-mime-info software-properties-common libfuse2 -y
 sudo apt-get install curl dkms gcc jq make ncdu perl wget gdebi bzip2 tar -y
 sudo apt-get install libpq-dev libmagic-dev libcurl3-gnutls libgmp3-dev libcurl4 libcurl4-openssl-dev -y
-sudo apt-get install libreoffice python3-pip openjdk-21-jdk net-tools traceroute -y
-```
-
-### Pinta (Editing pictures)
-```
-sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
-sudo apt-get update
-sudo apt-get install pinta
+sudo apt-get install libreoffice python3-pip openjdk-21-jdk net-tools traceroute mtpaint -y
 ```
 
 ### VPN
