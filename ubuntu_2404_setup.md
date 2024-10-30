@@ -5,20 +5,20 @@ QA Lead at Dexters in 2024
 
 ---upto-here---
 
-### Initial files / software
-```
-sudo apt-get install google-chrome-stable
-sudo snap install slack
-sudo apt-get install libheif-examples
-sudoedit /etc/environment # Then add /home/luke/Code
-```
-
 ### Vim setup
 ```
 sudo apt-get install vim -y
 echo "set backspace=2" >> ~/.vimrc
 echo "set nocompatible" >> ~/.vimrc
 sudo update-alternatives --config editor # Pick option 3
+```
+
+### Initial files / software
+```
+sudo apt-get install google-chrome-stable
+sudo snap install slack
+sudo apt-get install libheif-examples
+sudoedit /etc/environment # Then add /home/luke/Code
 ```
 
 ### Git setup
