@@ -73,7 +73,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo usermod -aG docker ${USER}
 sudo systemctl restart docker
 sudo chmod 666 /var/run/docker.sock
-# Restart your machine at this point!
 ```
 
 ### Javascript
@@ -95,7 +94,7 @@ rm ./keybase_amd64.deb
 ### Ruby
 ```
 # Do this last because it seems to overwrite some of the other settings
-# See https://github.com/rvm/rvm/issues/4915 for issues installing really old rubies
+# Keep monitoring https://github.com/rvm/rvm/issues/4915 for tips installing any 2.x ruby
 sudo apt-add-repository -y ppa:rael-gc/rvm
 sudo apt-get install rvm
 source /etc/profile.d/rvm.sh
@@ -104,7 +103,7 @@ rvm fix-permissions user
 rvm group add rvm $USER
 # Restart your machine at this point!
 rvm autolibs disable
-rvm install 2.6.10 && rvm install 2.7.8 && rvm install 3.0.7 && rvm install 3.1.6 && rvm install 3.2.4 && rvm install 3.3.3
+rvm install 3.0.7 && rvm install 3.1.6 && rvm install 3.2.6 && rvm install 3.3.5
 ```
 
 ### Cleanup
