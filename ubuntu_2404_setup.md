@@ -71,14 +71,11 @@ sudo apt-get install openvpn3
 
 ### Docker
 ```
-sudo apt-get remove docker docker-engine docker.io containerd runc -y
 sudo rm -rf /usr/local/bin/docker-compose
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
-apt-cache madison docker-ce
-sudo groupadd docker # Possibly redundant step in 20.04 onwards
 sudo usermod -aG docker ${USER}
 sudo systemctl restart docker
 sudo chmod 666 /var/run/docker.sock
