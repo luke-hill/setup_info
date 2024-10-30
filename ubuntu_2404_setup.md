@@ -79,10 +79,10 @@ sudo chmod 666 /var/run/docker.sock # Moved above as a test
 
 ### Javascript
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 sudo apt-get update
 # Close your terminal and then re-open it
-nvm install 8 && nvm install 10 && nvm install 12 # Whilst at Ex-Ordo we're using old node versions
+nvm install 12 && nvm install 14 && nvm install 16 && nvm install 18
 ```
 
 ### Keybase
