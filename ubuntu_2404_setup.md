@@ -102,7 +102,13 @@ rvm fix-permissions user
 rvm group add rvm $USER
 # Restart your machine at this point!
 rvm autolibs disable
-rvm install 3.0.7 && rvm install 3.1.6 && rvm install 3.2.6 && rvm install 3.3.5
+rvm install 3.1.6 && rvm install 3.2.6 && rvm install 3.3.6
+```
+
+### RubyMine fixes
+```
+# Whilst RubyMine 2024 has issues with debugging and ruby 3.1+
+$ sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
 ```
 
 ### Cleanup
