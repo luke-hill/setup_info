@@ -82,7 +82,7 @@ sudo chmod 666 /var/run/docker.sock
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 sudo apt-get update
 # Close your terminal and then re-open it
-nvm install 14 && nvm install 16 && nvm install 18 && nvm install 20 && nvm install 22
+nvm install 22 && nvm install 20 && nvm install 18 && nvm install 16
 ```
 
 ### Keybase
