@@ -1,7 +1,7 @@
 ## Install ubuntu 24.04
 
-This is the 4th full installation instructions I did for the new laptop for my job as
-QA Lead at Dexters in 2024
+This is the 4th!!! Full installation instructions I did for the new laptop for my job as
+Lead QA Engineer Lead at Dexters in December 2024
 
 ### Vim setup
 ```
@@ -17,7 +17,7 @@ sudo apt-get install google-chrome-stable
 sudo snap install slack
 sudo apt-get install libheif-examples
 sudoedit /etc/environment # Then add /home/luke/Code
-# Now go and check the Webex 24.04 md file and follow the instructions there (And restart afterwards)
+# Now go and check the `ubuntu_2404_webex_issue.md` file and follow the instructions there (And restart afterwards)
 # Now download Jetbrains toolbox
 # Now ensure all drivers are purged and your using the X-Org Nouveau display driver else there will be issues using monitors
 ```
