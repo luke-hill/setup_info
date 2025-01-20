@@ -17,6 +17,7 @@ sudo apt-get install google-chrome-stable
 sudo snap install slack
 sudo apt-get install libheif-examples
 sudoedit /etc/environment # Then add /home/luke/Code
+bash <(wget -qO- https://raw.githubusercontent.com/daveprowse/scripts/refs/heads/main/doys-install.sh)
 # Now go and check the `ubuntu_2404_webex_issue.md` file and follow the instructions there (And restart afterwards)
 # Now download Jetbrains toolbox
 # Now ensure all drivers are purged and your using the X-Org Nouveau display driver else there will be issues using monitors
@@ -42,6 +43,8 @@ echo "# Add Timestamps to Terminal Windows - Created on $(date)" >> ~/.bash_alia
 echo "export PS1=\"[\\t] \$PS1\"" >> ~/.bash_aliases
 echo "# Create a docker-compose alias to provide v1 style commands - Created on $(date)" >> ~/.bash_aliases
 echo 'alias docker-compose="docker compose"' >> ~/.bash_aliases
+echo "# Create a draw alias to allow you to annotate screenshots - Created on $(date)" >> ~/.bash_aliases
+echo 'alias draw="gnome-extensions enable draw-on-your-screen3@daveprowse.github.io"' >> ~/.bash_aliases
 ```
 
 ### Dev APT packages
