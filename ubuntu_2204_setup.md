@@ -1,9 +1,9 @@
-## Install ubuntu 22.04
+# Install ubuntu 22.04
 
 This is the 4th!!! Full installation instructions I did for the new laptop for my job as
 Lead QA Engineer Lead at Dexters in December 2024
 
-### Vim setup
+## Vim setup
 ```
 sudo apt-get install vim -y
 echo "set backspace=2" >> ~/.vimrc
@@ -11,7 +11,7 @@ echo "set nocompatible" >> ~/.vimrc
 sudo update-alternatives --config editor # Pick option 3
 ```
 
-### Initial files / software
+## Initial files / software
 ```
 sudo apt-get install google-chrome-stable
 sudo snap install slack
@@ -23,7 +23,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/daveprowse/scripts/refs/heads
 # Now ensure all drivers are purged and your using the X-Org Nouveau display driver else there will be issues using monitors
 ```
 
-### Git setup
+## Git setup
 ```
 sudo apt-get install git -y
 git config --global user.email "lukehill_uk@hotmail.com"
@@ -32,7 +32,7 @@ echo ".idea/*" >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
-### Aliases
+## Aliases
 ```
 echo "# Make the shell case-insensitive for autocompletions - Created on $(date)" | sudo tee -a /etc/inputrc
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc
@@ -47,7 +47,7 @@ echo "# Create a draw alias to allow you to annotate screenshots - Created on $(
 echo 'alias draw="gnome-extensions enable draw-on-your-screen3@daveprowse.github.io"' >> ~/.bash_aliases
 ```
 
-### Dev APT packages
+## Dev APT packages
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install --no-install-recommends gnome-panel gnome-tweaks -y
@@ -57,7 +57,7 @@ sudo apt-get install libpq-dev libmagic-dev libcurl3-gnutls libgmp3-dev libcurl4
 sudo apt-get install libreoffice python3-pip openjdk-21-jdk net-tools traceroute mtpaint -y
 ```
 
-### VPN
+## VPN
 ```
 sudo sh -c 'echo "# OpenVPN3 Official Apt Repository for openvpn3.
 deb https://swupdate.openvpn.net/community/openvpn3/repos focal main" >> /etc/apt/sources.list.d/openvpn3.list'
@@ -67,7 +67,7 @@ sudo apt-get update
 sudo apt-get install openvpn3
 ```
 
-### Docker
+## Docker
 ```
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
@@ -80,7 +80,7 @@ sudo systemctl restart docker
 sudo chmod 666 /var/run/docker.sock
 ```
 
-### Javascript
+## Javascript
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 sudo apt-get update
@@ -88,7 +88,7 @@ sudo apt-get update
 nvm install 22 && nvm install 20 && nvm install 18 && nvm install 16
 ```
 
-### Keybase
+## Keybase
 ```
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
 sudo apt-get install -y ./keybase_amd64.deb
@@ -96,7 +96,7 @@ run_keybase
 rm ./keybase_amd64.deb
 ```
 
-### Ruby
+## Ruby
 ```
 # Do this last because it seems to overwrite some of the other settings
 # Keep monitoring https://github.com/rvm/rvm/issues/4915 for tips installing any 2.x ruby
@@ -111,13 +111,13 @@ rvm autolibs disable
 rvm install 3.1.6 && rvm install 3.2.6 && rvm install 3.3.6
 ```
 
-### RubyMine fixes
+## RubyMine fixes
 ```
 # Whilst RubyMine 2024 has issues with debugging and ruby 3.1+
 $ sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
 ```
 
-### Cleanup
+## Cleanup
 ```
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y
 ```

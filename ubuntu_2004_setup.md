@@ -1,9 +1,9 @@
-## Install ubuntu 20.04
+# Install ubuntu 20.04
 
 This is the full installation instructions I did for the new laptop for my job as
 QA Lead at Ex-Ordo in January 2023
 
-### Initial files / software
+## Initial files / software
 ```
 sudo apt-get install google-chrome-stable
 sudo snap install slack
@@ -11,7 +11,7 @@ sudo apt-get install libheif-examples
 sudoedit /etc/environment # Then add /home/luke/Code
 ```
 
-### Vim setup
+## Vim setup
 ```
 sudo apt-get install vim -y
 echo "set backspace=2" >> ~/.vimrc
@@ -19,7 +19,7 @@ echo "set nocompatible" >> ~/.vimrc
 sudo update-alternatives --config editor # Pick option 3
 ```
 
-### Git setup
+## Git setup
 ```
 sudo apt-get install git -y
 git config --global user.email "lukehill_uk@hotmail.com"
@@ -28,7 +28,7 @@ echo ".idea/*" >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
-### Aliases
+## Aliases
 ```
 echo "# Make the shell case-insensitive for autocompletions - Created on $(date)" | sudo tee -a /etc/inputrc
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc
@@ -41,7 +41,7 @@ echo "# Create a docker-compose alias to provide v1 style commands - Created on 
 echo 'alias docker-compose="docker compose"' >> ~/.bash_aliases
 ```
 
-### Dev APT packages
+## Dev APT packages
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install --no-install-recommends gnome-panel -y
@@ -54,7 +54,7 @@ sudo apt-get install net-tools traceroute
 sudo apt-get install pinta
 ```
 
-### VPN
+## VPN
 ```
 sudo sh -c 'echo "# OpenVPN3 Official Apt Repository for openvpn3.
 deb https://swupdate.openvpn.net/community/openvpn3/repos focal main" >> /etc/apt/sources.list.d/openvpn3.list'
@@ -64,7 +64,7 @@ sudo apt-get update
 sudo apt-get install openvpn3
 ```
 
-### Docker
+## Docker
 ```
 sudo apt-get remove docker docker-engine docker.io containerd runc -y
 sudo rm -rf /usr/local/bin/docker-compose
@@ -84,7 +84,7 @@ sudo systemctl restart docker # Moved above as a test
 sudo chmod 666 /var/run/docker.sock # Moved above as a test
 ```
 
-### Javascript
+## Javascript
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 sudo apt-get update
@@ -92,7 +92,7 @@ sudo apt-get update
 nvm install 8 && nvm install 10 && nvm install 12 # Whilst at Ex-Ordo we're using old node versions
 ```
 
-### Keybase
+## Keybase
 ```
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
 sudo apt-get install -y ./keybase_amd64.deb
@@ -100,7 +100,7 @@ run_keybase
 rm ./keybase_amd64.deb
 ```
 
-### Ruby
+## Ruby
 ```
 # Do this last because it seems to overwrite some of the other settings
 # See https://github.com/rvm/rvm/issues/4915 for issues installing really old rubies
@@ -115,7 +115,7 @@ rvm autolibs disable
 rvm install 2.6.10 && rvm install 2.7.8 && rvm install 3.0.7 && rvm install 3.1.6 && rvm install 3.2.4 && rvm install 3.3.3
 ```
 
-### Cleanup
+## Cleanup
 ```
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y
 ```

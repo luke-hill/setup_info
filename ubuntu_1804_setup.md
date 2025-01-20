@@ -1,4 +1,4 @@
-## Install ubuntu 18.04 on a Virtual Machine
+# Install ubuntu 18.04 on a Virtual Machine
 
 Installation instructions for installing Ubuntu 18.04 I did whilst at Citizens Advice in 2020
 
@@ -6,7 +6,7 @@ Remember the installation could be tricky. We need the pre-requisites
 - Oracle Virtualbox (V6 seems to have more reliability than V7!)
 - Ubuntu 18.04 ISO (Latest ver)
 
-### Manual setup
+## Manual setup
 ```
 # Google Chrome
 # Slack
@@ -15,7 +15,7 @@ Remember the installation could be tricky. We need the pre-requisites
 # Download chromedriver and geckodriver AND place them on PATH
 ```
 
-### Vim setup
+## Vim setup
 ```
 sudo apt install vim -y
 echo "set backspace=2" >> ~/.vimrc
@@ -23,7 +23,7 @@ echo "set nocompatible" >> ~/.vimrc
 sudo update-alternatives --config editor
 ```
 
-### Git setup
+## Git setup
 ```
 sudo apt install git -y
 git config --global user.email "lukehill_uk@hotmail.com"
@@ -33,7 +33,7 @@ echo ".idea/*" >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
-### Aliases
+## Aliases
 ```
 echo "# Make the shell case-insensitive for autocompletions - Created on $(date)" | sudo tee -a /etc/inputrc
 echo set completion-ignore-case on | sudo tee -a /etc/inputrc
@@ -46,7 +46,7 @@ echo "# Create a docker-compose alias to provide v1 style commands - Created on 
 echo 'alias docker-compose="docker compose"' >> ~/.bash_aliases
 ```
 
-### Generic setup
+## Generic setup
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -60,14 +60,14 @@ sudo apt install openvpn -y
 sudo apt update --fix-missing
 ```
 
-### Google Chrome
+## Google Chrome
 ```
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb -y
 rm ./google-chrome-stable_current_amd64.deb
 ```
 
-### Docker
+## Docker
 ```
 sudo apt-get remove docker docker-engine docker.io containerd runc -y
 sudo rm -rf /usr/local/bin/docker-compose
@@ -86,14 +86,14 @@ sudo systemctl restart docker
 sudo chmod 666 /var/run/docker.sock
 ```
 
-### Javascript
+## Javascript
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 sudo apt update
 ```
 
-### Ruby
+## Ruby
 ```
 # Do this last because it seems to overwrite some of the other settings
 # See https://github.com/rvm/rvm/issues/4915 for issues installing really old rubies
@@ -106,7 +106,7 @@ rvm autolibs disable
 rvm install 2.6.10 && rvm install 2.7.6 && rvm install 3.0.4 && rvm install 3.1.2 && rvm install 3.2.0
 ```
 
-### Keybase
+## Keybase
 ```
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
 sudo apt install -y ./keybase_amd64.deb
