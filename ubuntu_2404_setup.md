@@ -1,7 +1,14 @@
 ## Install ubuntu 24.04
 
-This is the full installation instructions I did for the new laptop for my job as
+**DEPRECATED**
+
+> This "was" the full installation instructions I did for the new laptop for my job as
 QA Lead at Dexters in 2024
+
+**NOW**
+
+> Use the [Ubuntu 22.04 setup](./ubuntu_2204_setup.md) guide instead. As the 24.04 guide is
+still quite flaky and doesn't work well with Dell machines
 
 ### Vim setup
 ```
