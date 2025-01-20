@@ -1,4 +1,4 @@
-## Install ubuntu 24.04
+## Install ubuntu 22.04
 
 This is the 4th!!! Full installation instructions I did for the new laptop for my job as
 Lead QA Engineer Lead at Dexters in December 2024
