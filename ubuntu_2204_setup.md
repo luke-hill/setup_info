@@ -18,7 +18,7 @@ sudo snap install slack
 sudo apt-get install libheif-examples
 sudoedit /etc/environment # Then add /home/luke/Code
 bash <(wget -qO- https://raw.githubusercontent.com/daveprowse/scripts/refs/heads/main/doys-install.sh)
-# Now go and check the `ubuntu_2404_webex_issue.md` file and follow the instructions there (And restart afterwards)
+# Now go and check the `ubuntu_2404_webex_issue.md` file and follow the instructions there - switch `wayland` to `x11` (And restart afterwards)
 # Now download Jetbrains toolbox
 # Now ensure all drivers are purged and your using the X-Org Nouveau display driver else there will be issues using monitors
 ```
