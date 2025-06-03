@@ -21,6 +21,7 @@ $ rvm install 3.0.2
 # See https://github.com/rvm/rvm/issues/5047#issuecomment-844985557
 export warnflags=-Wno-error=implicit-function-declaration
 $ softwareupdate --install-rosetta
+# The below 2 commands might fail. Investigate removing. Currently testing on MAC 15.1 (Sequoia)
 $ brew uninstall --ignore-dependencies node 
 $ brew uninstall --force node
 $ brew update 
