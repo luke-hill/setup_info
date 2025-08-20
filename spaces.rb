@@ -1,4 +1,6 @@
 # List of all various spacing characters
+# See https://invisible-characters.com/view.html for an interactive way to test / insert rogue characters
+# See https://en.wikipedia.org/wiki/Whitespace_character#Unicode for a list of most / all characters
 
 # NEWLINE SPACES
 # These are all the characters that force you onto a newline
