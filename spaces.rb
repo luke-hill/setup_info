@@ -52,4 +52,3 @@
 #
 # Left to Right Character     -> U200E -> '‎'
 # Right to Left Character     -> U200F -> '‏'
-
