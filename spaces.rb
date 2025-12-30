@@ -1,4 +1,6 @@
 # List of all various spacing characters
+# See https://invisible-characters.com/view.html for an interactive way to test / insert rogue characters
+# See https://en.wikipedia.org/wiki/Whitespace_character#Unicode for a list of most / all characters
 
 # NEWLINE SPACES
 # These are all the characters that force you onto a newline
@@ -42,11 +44,11 @@
 # Zero Width Non-Breaking Space [2] -> UFFEF -> '﻿'
 #
 # [1] Because of the scarcity of this space, it doesn't often render using its MVS acronym. However scanning it will
-# show it there if you use a character point on a standard IDE
+# show it there if you use a character counter on a standard IDE (Such as IntelliJ)
 # [2] This character sometimes has another acronym - BOM - Byte Order Mark
 
 # CHANGING CHARACTERS
-# These change the flow of subsequent letters (Used when switching to Biblical or Ancient languages)
+# These change the flow of subsequent letters (Used when switching to Biblical, Middle Eastern or Ancient languages)
 #
 # Left to Right Character     -> U200E -> '‎'
 # Right to Left Character     -> U200F -> '‏'
