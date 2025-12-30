@@ -3,6 +3,17 @@
 This is the 4th!!! Full installation instructions I did for the new laptop for my job as
 Lead QA Engineer Lead at Dexters in December 2024
 
+## ISSUE - DECEMBER 2025
+> NB: There is an issue with keybase (Which is entirely outdated and unused by myself anymore)
+> 
+> Installing this and anything extra can cause problems
+
+## Keybase purging
+```
+sudo apt-get remove keybase
+pkill keybase
+```
+
 ## Vim setup
 ```
 sudo apt-get install vim -y
