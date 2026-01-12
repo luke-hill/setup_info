@@ -27,7 +27,7 @@ sudo update-alternatives --config editor # Pick option `vim.basic`
 sudo apt-get install google-chrome-stable
 sudo snap install slack
 sudo apt-get install libheif-examples
-sudoedit /etc/environment # Then add /home/luke/Code
+sudoedit /etc/environment # Then add /home/YOUR_NAME/Code
 bash <(wget -qO- https://raw.githubusercontent.com/daveprowse/scripts/refs/heads/main/doys-install.sh)
 # Now go and check the `ubuntu_2404_webex_issue.md` file and follow the instructions there - switch `wayland` to `x11` (And restart afterwards)
 # Now download Jetbrains toolbox
