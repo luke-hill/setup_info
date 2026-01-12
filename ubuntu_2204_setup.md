@@ -19,7 +19,7 @@ pkill keybase
 sudo apt-get install vim -y
 echo "set backspace=2" >> ~/.vimrc
 echo "set nocompatible" >> ~/.vimrc
-sudo update-alternatives --config editor # Pick option 3
+sudo update-alternatives --config editor # Pick option `vim.basic`
 ```
 
 ## Initial files / software
