@@ -3,10 +3,17 @@
 This is the 4th!!! Full installation instructions I did for the new laptop for my job as
 Lead QA Engineer Lead at Dexters in December 2024
 
-## ISSUE - DECEMBER 2025
-> NB: There is an issue with keybase (Which is entirely outdated and unused by myself anymore)
+## ISSUE - FEBRUARY 2026
+> The linux kernel version: `linux-image-6.8.0-94-generic` seems to not work on my specific laptop
 > 
-> Installing this and anything extra can cause problems
+> Reverting to version ` linux-image-6.8.0-90-generic` seems to fix the issue
+> 
+> Check out https://forums.linuxmint.com/viewtopic.php?t=448711 for help on how to remedy this
+
+## ISSUE - DECEMBER 2025
+> NB: There is an issue with keybase (Which is entirely outdated and unused by myself any more)
+> 
+> Installing this and anything extra (related to Keybase), can cause problems. Suggest we remove it in the next installation guide (26.06)
 
 ## Keybase purging
 ```
