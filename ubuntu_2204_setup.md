@@ -126,8 +126,8 @@ rvm fix-permissions user
 rvm group add rvm $USER
 # Restart your machine at this point!
 rvm autolibs disable
-rvm install 3.1.6
-rvm install 3.2.9 && rvm install 3.3.10 && 3.4.8
+rvm install 3.1.7
+rvm install 3.2.10 && rvm install 3.3.10 && 3.4.8
 ```
 
 ## RubyMine fixes
