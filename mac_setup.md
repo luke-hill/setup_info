@@ -7,9 +7,18 @@ $ sudo xcode-select --install
 $ brew update
 $ brew upgrade
 $ brew install git
+$ brew remove rbenv
+$ brew install openssl@3
+$ export LDFLAGS="-L$(brew --prefix openssl@3)/lib"
+$ export CPPFLAGS="-I$(brew --prefix openssl@3)/include"
+$ export PKG_CONFIG_PATH="$(brew --prefix openssl@3)/lib/pkgconfig"
 $ git --version # This should output a number
-$ curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails
+$ brew update
+$ brew install openssl@3 libyaml readline zlib autoconf
+$ curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable
 # Quit the terminal once this has installed, and restart your machine
+$ export warnflags=-Wno-error=implicit-function-declaration
+$ softwareupdate --install-rosetta
 $ type rvm | head -1
 $ rvm -v # This should output a number
 # Install rubies 3.1/3.2/3.3/3.4
@@ -17,10 +26,10 @@ $ rvm install 3.1.6
 $ rvm install 3.2.6
 $ rvm install 3.3.7
 $ rvm install 3.4.2
+# This line should only be needed if the ruby installs are all failing
+$ rvm reinstall 3.2.2 --with-openssl-dir=$(brew --prefix openssl@3)
 # The fix below is to remedy an Issue on Big Sur
 # See https://github.com/rvm/rvm/issues/5047#issuecomment-844985557
-export warnflags=-Wno-error=implicit-function-declaration
-$ softwareupdate --install-rosetta
 # The below 2 commands might fail. Investigate removing. Currently testing on MAC 15.1 (Sequoia)
 $ brew uninstall --ignore-dependencies node 
 $ brew uninstall --force node
