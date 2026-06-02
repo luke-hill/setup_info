@@ -74,6 +74,16 @@ sudo apt-get install curl dkms gcc jq make ncdu perl wget gdebi bzip2 tar -y
 sudo apt-get install libreoffice python3-pip openjdk-21-jdk net-tools traceroute mtpaint hardinfo -y
 ```
 
+## Chrome Mime fixes
+# If you find that chrome is no longer loading html/pdf files, or that http/https links are not opening in
+# chrome, then you can run the following commands to fix it
+```
+xdg-mime default google-chrome.desktop text/html
+xdg-mime default google-chrome.desktop application/pdf
+xdg-mime default google-chrome.desktop x-scheme-handler/http
+xdg-mime default google-chrome.desktop x-scheme-handler/https
+```
+
 ## Ruby Dev APT packages
 ```
 # Most of these are needed to install the curb gem
