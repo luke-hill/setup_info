@@ -75,9 +75,9 @@ sudo apt-get install libreoffice python3-pip openjdk-21-jdk net-tools traceroute
 ```
 
 ## Chrome Mime fixes
+```
 # If you find that chrome is no longer loading html/pdf files, or that http/https links are not opening in
 # chrome, then you can run the following commands to fix it
-```
 xdg-mime default google-chrome.desktop text/html
 xdg-mime default google-chrome.desktop application/pdf
 xdg-mime default google-chrome.desktop x-scheme-handler/http
