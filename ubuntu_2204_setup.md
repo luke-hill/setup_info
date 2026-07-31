@@ -151,7 +151,9 @@ rvm group add rvm $USER
 # Restart your machine at this point!
 rvm autolibs disable
 rvm install 3.1.7
-rvm install 3.2.10 && rvm install 3.3.10 && 3.4.8
+rvm install 3.2.11 && rvm install 3.3.11 && rvm install 3.4.10
+# Installing ruby 4 doesn't work well on rvm, so we need to be more verbose
+rvm install ruby-4.0.6
 ```
 
 ## RubyMine fixes
