@@ -41,6 +41,54 @@ bash <(wget -qO- https://raw.githubusercontent.com/daveprowse/scripts/refs/heads
 # Now ensure all drivers are purged and your using the X-Org Nouveau display driver else there will be issues using monitors
 ```
 
+## Chrome "US-variant" setup
+```
+# Inside the directory ~/.local/share/applications you need to run the following code
+vi google-chrome-en-gb.desktop
+# Then paste in the following code:
+    [Desktop Entry]
+    Version=1.0
+    Name=Chrome UK
+    GenericName=Web Browser
+    Comment=Google Chrome - English UK
+    Exec=/usr/bin/google-chrome-stable --lang=en-GB --class=ChromeEnGB %U
+    Terminal=false
+    Type=Application
+    Icon=google-chrome
+    Categories=Network;WebBrowser;
+    StartupNotify=true
+    StartupWMClass=ChromeEnGB
+vi google-chrome-en-us.desktop
+    [Desktop Entry]
+    Version=1.0
+    Name=Chrome US
+    Comment=Google Chrome US
+    Exec=/home/luke/.local/bin/chrome-us %U
+    Terminal=false
+    Type=Application
+    Icon=google-chrome
+    Categories=Network;WebBrowser;
+    StartupNotify=true
+# Then once you've made these files. You need to modify the us launcher
+cd ~/.local/bin
+vi chrome-us
+# Then paste in the following code:
+    #!/bin/sh
+    export LANG=en_US.utf8
+    export LANGUAGE=en_US:en
+    export LC_ALL=en_US.utf8
+    export TZ=America/New_York
+    
+    exec /usr/bin/google-chrome-stable \
+      --user-data-dir=/home/luke/.config/google-chrome-us \
+      --lang=en-US \
+      --class=ChromeEnUS \
+      "$@"
+update-desktop-database ~/.local/share/applications
+# Then you can use Windows to find the launcher for Google Chrome US and pin it to your taskbar.
+# You can also use the `gnome-tweaks` tool to change the icon for this launcher to the standard chrome icon.
+```
+
 ## Git setup
 ```
 sudo apt-get install git -y
@@ -92,11 +140,9 @@ sudo apt-get install libpq-dev libmagic-dev libcurl3-gnutls libgmp3-dev libcurl4
 
 ## PHP Dev APT packages
 ```
-sudo apt-get install -y libxml2-dev libbz2-dev libpng-dev libjpeg-dev libonig-de
-v libtidy-dev libxslt-dev libzip-dev
+sudo apt-get install -y libxml2-dev libbz2-dev libpng-dev libjpeg-dev libonig-dev libtidy-dev libxslt-dev libzip-dev
 sudo apt-get install -y build-essential autoconf bison re2c pkg-config libxml2-dev libsqlite3-dev libssl-dev libcurl4-openssl-dev libonig-dev libzip-dev
-sudo apt-get install -y libjpeg-dev libpng-dev libwebp-dev libfreetype6-dev
-sudo apt-get install -y libicu-dev
+sudo apt-get install -y libjpeg-dev libpng-dev libwebp-dev libfreetype6-dev libicu-dev
 ```
 
 ## VPN
