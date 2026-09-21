@@ -141,8 +141,8 @@ sudo apt-get install libpq-dev libmagic-dev libcurl3-gnutls libgmp3-dev libcurl4
 ## PHP Dev APT packages
 ```
 sudo apt-get install -y libxml2-dev libbz2-dev libpng-dev libjpeg-dev libonig-dev libtidy-dev libxslt-dev libzip-dev
-sudo apt-get install -y build-essential autoconf bison re2c pkg-config libxml2-dev libsqlite3-dev libssl-dev libcurl4-openssl-dev libonig-dev libzip-dev
-sudo apt-get install -y libjpeg-dev libpng-dev libwebp-dev libfreetype6-dev libicu-dev
+sudo apt-get install -y build-essential autoconf bison re2c pkg-config libsqlite3-dev libssl-dev libcurl4-openssl-dev libzip-dev
+sudo apt-get install -y libwebp-dev libfreetype6-dev libicu-dev
 ```
 
 ## VPN
@@ -196,7 +196,6 @@ rvm fix-permissions user
 rvm group add rvm $USER
 # Restart your machine at this point!
 rvm autolibs disable
-rvm install 3.1.7
 rvm install 3.2.11 && rvm install 3.3.11 && rvm install 3.4.10
 # Installing ruby 4 doesn't work well on rvm, so we need to be more verbose
 rvm install ruby-4.0.6
